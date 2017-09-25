@@ -22,7 +22,7 @@ using MediatR;
 
 namespace ${1}.Workflows.${2}.Queries
 {
-    public class ${2}Query : IRequest<${2}Response>
+    public class ${2}Query : IRequest<${2}QueryResponse>
     {
         public int Id { get; set; }
     }
@@ -77,7 +77,7 @@ using MediatR;
 
 namespace ${1}.Workflows.${2}.Commands
 {
-    public class ${2}Command : IRequest<${2}Response>
+    public class ${2}Command : IRequest<${2}CommandResponse>
     {
         public int Id { get; set; }
     }
