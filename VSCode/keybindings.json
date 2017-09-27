@@ -29,5 +29,13 @@
     {
         "key": "alt+cmd+s",
         "command": "-workbench.action.files.saveAll"
+    },
+    {
+        "key": "cmd+t",
+        "command": "-workbench.action.showAllSymbols"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.quickOpen"
     }
 ]
