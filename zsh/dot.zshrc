@@ -75,3 +75,6 @@ alias gs="git status"
 alias ga="git add -A && git status"
 alias gpu="git push"
 alias gc="git checkout"
+
+# Custom windows aliases
+alias e="explorer ."
