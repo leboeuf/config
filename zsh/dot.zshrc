@@ -78,3 +78,5 @@ alias gc="git checkout"
 
 # Custom windows aliases
 alias e="explorer ."
+alias binobj='find . -iname "bin" -o -iname "obj" | xargs rm -rf'
+alias recycle='/c/Windows/System32/inetsrv/appcmd recycle apppool ".NET v4.5"'
