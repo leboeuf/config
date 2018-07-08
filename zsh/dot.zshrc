@@ -75,6 +75,11 @@ alias gs="git status"
 alias ga="git add -A && git status"
 alias gpu="git push"
 alias gc="git checkout"
+alias gcb="git checkout -b"
+alias gl="git log"
+alias gd="git diff"
+alias gb="git branch"
+alias gf="git fetch --prune"
 
 # Custom windows aliases
 alias e="explorer ."
