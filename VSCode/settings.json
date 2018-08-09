@@ -7,5 +7,8 @@
     "telemetry.enableTelemetry": false,
     "editor.codeLens": false,
     "git.enableSmartCommit": true, // Automatically stage when committing
-    "git.confirmSync": false // Don't show dialog for git push
+    "git.confirmSync": false, // Don't show dialog for git push
+    "window.zoomLevel": 0,
+    "editor.wordWrap": "off",
+    "emmet.triggerExpansionOnTab": true
 }
