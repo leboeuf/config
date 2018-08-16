@@ -10,5 +10,6 @@
     "git.confirmSync": false, // Don't show dialog for git push
     "window.zoomLevel": 0,
     "editor.wordWrap": "off",
-    "emmet.triggerExpansionOnTab": true
+    "emmet.triggerExpansionOnTab": true,
+    "breadcrumbs.enabled": true
 }
