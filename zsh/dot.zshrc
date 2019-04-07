@@ -69,21 +69,31 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
 
 # Custom aliases
+
+# Win: aliases="nano ~/bash_profile"
 alias aliases="nano ~/.zshrc"
-alias composer="/usr/local/bin/composer"
 alias gs="git status"
 alias ga="git add -A && git status"
 alias gp="git pull"
 alias gpu="git push"
+alias gpuf="git push -f"
 alias gc="git checkout"
 alias gcb="git checkout -b"
 alias gcm="git commit -m"
-alias gl="git log"
-alias gd="git diff"
 alias gb="git branch"
-alias gf="git fetch --prune"
+alias gd="git diff"
+alias gl="git log"
+alias gf="git fetch --prune && git branch --merged | grep -v '\*\|master\|develop' | xargs -n 1 git branch -d"
+alias squash="git rebase --interactive"
+alias gitresetreset="git reset HEAD@{1}"
+alias pr="/c/Users/maxime.leboeuf/Documents/_backup/pr.sh"
 
 # Custom windows aliases
 alias e="explorer ."
 alias binobj='find . -iname "bin" -o -iname "obj" | xargs rm -rf'
 alias recycle='/c/Windows/System32/inetsrv/appcmd recycle apppool ".NET v4.5"'
+
+# To setup VS-Chromium-extension for better "fast find" in a project:
+alias setupfastfind="echo $'[SearchableFiles.include]\r\n*.cs\r\n*.xaml\r\n*.resw\r\n\r\n[SearchableFiles.ignore]\r\nbin/\r\nobj/\r\n' > vs-chromium-project.txt && echo $'vs-chromium-project.txt\r\n*.favdoc' >> .git/info/exclude"
+# Alternative when there's an "src" folder at the root of the git repo
+alias setupfastfind2="echo $'[SearchableFiles.include]\r\n*.cs\r\n*.xaml\r\n*.resw\r\n\r\n[SearchableFiles.ignore]\r\nsrc/bin/\r\nsrc/obj/\r\n' > src/vs-chromium-project.txt && echo $'src/vs-chromium-project.txt\r\nsrc/*.favdoc' >> .git/info/exclude"
